@@ -1,0 +1,12 @@
+{
+    "name": "testeng/theme",
+    "description": "test",
+    "type": "project",
+    "license": "proprietary",
+    "require": {
+      "timber/timber": "^2.0"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+  }
+  
