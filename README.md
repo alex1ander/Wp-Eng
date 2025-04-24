@@ -8,9 +8,8 @@
    ```bash
    git clone https://github.com/alex1ander/Wp-Eng.git
    cd Wp-Eng
-
-composer install
-npm install
+   composer install
+   npm install
 
 Контент
   Все элементы лендинга редактируются через страницы (Pages) в админке WordPress.
