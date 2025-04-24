@@ -5,17 +5,15 @@
         </svg>
     </div>
 
-    <div class="place-for-image">
-    </div>
+    <div class="place-for-image" style="background-image: url('{{ images['contact-form'] }}');"></div>
 
     <div class="contact-form">
         <h2>Зворотній зв’язок</h2>
 
-        <form action="#" method="post">
-
+        <form action="" method="post">
             <input type="text" id="dataService" name="service" placeholder="dataService" hidden>
             <input type="text" id="namePopUp" name="name" placeholder="Ім'я">
-            <input type="phone" id="phonePopUp" name="email" required  placeholder="Телефон">
+            <input type="phone" id="phonePopUp" name="phone" required  placeholder="Телефон">
             <input type="email" id="emailPopUp" name="email" required  placeholder="Email*">
 
             <textarea id="messagePopUp" name="message" rows="5"  placeholder="Повідомлення"></textarea>

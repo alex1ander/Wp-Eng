@@ -1,30 +1,30 @@
-<div class="contact-with-us container">
+<div id="contacts" class="contact-with-us container">
     <div class="our-links">
-        <h3>Контакти</h3>
-        <p>Lorem ipsum dolor sit amet consectetur. Ac vivamus turpis suscipit velit leo rhoncus. Consectetur habitant eget eget arcu nibh. Proin dui felis arcu molestie. </p>
+        <h3>{{ contacts.title }}</h3>
+        <p>{{ contacts.text }}</p>
 
         <div class="contact-us">
             <div class="social-row">
                 <div class="icon"><svg height="24" width="24"><use xlink:href="#call"></use></svg></div>
                 <div class="text">
-                    <span >Телефон</span>
-                    <a href="#">+38 097 678 5434 </a>
+                    <span>Телефон</span>
+                    <a href="#">{{ contacts.phone }}</a>
                 </div>
             </div>
 
             <div class="social-row">
                   <div class="icon"><svg height="24" width="24"><use xlink:href="#sms"></use></svg></div>
                 <div class="text">
-                    <span>Телефон</span>
-                    <a href="#">+38 097 678 5434 </a>
+                    <span>Пошта</span>
+                    <a href="#">{{ contacts.email }}</a>
                 </div>
             </div>
 
             <div class="social-row">
                   <div class="icon"><svg height="24" width="24"><use xlink:href="#location"></use></svg></div>
                 <div class="text">
-                    <span>Телефон</span>
-                    <a href="#">+38 097 678 5434 </a>
+                    <span>Адреса</span>
+                    <a href="#">{{ contacts.address }}</a>
                 </div>
             </div>
 
@@ -35,7 +35,7 @@
     <div class="contact-form">
         <h3>Зворотній зв’язок</h3>
 
-        <form action="#" method="post">
+        <form action="" method="post">
 
             <div class="row">
                 <input type="text" id="name" name="name" placeholder="Ім'я">

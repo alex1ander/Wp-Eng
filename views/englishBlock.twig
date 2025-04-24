@@ -1,5 +1,5 @@
 
-<div class="english-block">
+<div id="english-block" class="english-block">
     <div class="container">
 
         <div class="top-part">
@@ -21,7 +21,7 @@
         </div>    
 
         <div class="grid-cards">
-            {% for i in 1..6 %}
+            {% for card in cards %}
                 {% include 'englishCard.twig' with {'blockNumber': i} %}
             {% endfor %}
         </div>
@@ -29,22 +29,12 @@
 
         <div class="our-benefits">
             <div class="benefit-block">
-                <h4>Індивідуальні заняття</h4>
-                <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                </ul>
+                <h4>{{ benefits.individual.title }}</h4>
+                {{ benefits.individual.text }}
             </div>
             <div class="benefit-block">
-                <h4>Групові заняття</h4>
-                <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                </ul>
+                <h4>{{ benefits.group.title }}</h4>
+                {{ benefits.group.text }}
             </div>
         </div>
 
